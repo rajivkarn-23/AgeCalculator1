@@ -10,4 +10,4 @@ This is my first learning of HTML ,CSS and Javascript , with some help of many y
 
  <br>Today i enhanced my age calculator by added time it and calculate in real time by using set interval...
 
- 
+ <br>Now i have changed my code , so that it 
