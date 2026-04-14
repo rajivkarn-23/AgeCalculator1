@@ -43,7 +43,7 @@
 #credit {
     bottom :0;
     width: 100%;
-    position:fixed;
+    position:relative;
     text-decoration: double;
   text-align: center;
   font-size: 26px;

@@ -7,8 +7,29 @@
        return 'Angrezo ke zamana';
 
   }
+function getMotivation(age) {
+    if (milestones[age]) {
+        return milestones[age];
+    }
 
+   
+    return "Great people achieve success at different ages — your journey is unique 🚀";
+}
 
+const motivationData = [
+{ age: 10, name: "Vaibhav Sooryavanshi" },
+{ age: 18, name: "Virat Kohli" },
+{age:15 ,name:"Kylian Mbappe"},
+{ age: 21, name: "Mark Zuckerburg" },
+{ age: 23, name: "Bill Gates" },
+{ age: 25, name: "Steve Jobs" },
+{ age: 29, name: "Sundar Pichai" },
+{ age: 32, name: "Elon Musk" },
+{ age: 35, name: "satya Nadella" },
+{ age: 40, name: "Warren Buffet" },
+{ age: 50, name: "Barack Obama" },
+{ age: 60, name: "Ratan Tata" }
+];
    function calculateAge()
    {
     const dobInput = document.getElementById("dob").value;
@@ -56,11 +77,21 @@
   let milliseconds = diffMs % 1000;
 
 
+let closest = motivationData.reduce((prev, curr) =>
+    Math.abs(curr.age - age) < Math.abs(prev.age - age) ? curr : prev
+);
 
-    document.getElementById("p1").innerText = `Your age is :${age} yrs & ${ monthDiff } months & ${ days } days & ${ hours } hrs & ${ minutes } min & ${ seconds } secs & ${ milliseconds} millisecs
+let message = `\n\n💡 At the age ${closest.age}, ${closest.name} was prooving the world wrong......
+                                Get up Bruhh and Be better (Day by Day).. 🚀`;
+  
 
-                                            You almost live more than ${n_M.toFixed(1)} million Seconds
+document.getElementById("p1").innerHTML = `Your age is: ${age} yrs, ${monthDiff} months, ${days} days <br>
+⏱ ${hours} hrs ${minutes} min ${seconds} sec <br><br>
 
-                                           You are from Generation ${gen}` ;
+🧠 You have lived ~${n_M.toFixed(1)} billion seconds <br>
+🌍 Generation: ${gen} <br>
+
+${message}
+`;
 }                                          
 setInterval(calculateAge,1000);
