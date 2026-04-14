@@ -36,7 +36,7 @@ const motivationData = [
     const tobinput =  document.getElementById("tob").value;
 
     if(!dobInput || !tobinput){
-        document.getElementById("p1").innerText = "Please select your date of birth & time of birth both";
+        document.getElementById("p1").innerText = "Please Select Your Date of Birth & Time of Birth (Both)";
         return ;
     }
     const dob  = new Date(`${dobInput}T${tobinput}`);
@@ -86,9 +86,9 @@ let message = `\n\n💡 At the age ${closest.age}, ${closest.name} was prooving 
   
 
 document.getElementById("p1").innerHTML = `Your age is: ${age} yrs, ${monthDiff} months, ${days} days <br>
-⏱ ${hours} hrs ${minutes} min ${seconds} sec <br><br>
+⏱ ${hours} hrs ${minutes} min ${seconds} sec <br><br><br><br>
 
-🧠 You have lived ~${n_M.toFixed(1)} billion seconds <br>
+🧠 You have lived ~${n_M.toFixed(1)} billion seconds <br> <br>
 🌍 Generation: ${gen} <br>
 
 ${message}

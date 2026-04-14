@@ -14,6 +14,7 @@
     border-radius: 6%;
 }
 #tob{
+    text-transform: uppercase;
     font-size: 12px;
     padding: 2px;
     width: 160px;
