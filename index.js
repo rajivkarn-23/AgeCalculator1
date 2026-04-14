@@ -60,8 +60,7 @@
     document.getElementById("p1").innerText = `Your age is :${age} yrs & ${ monthDiff } months & ${ days } days & ${ hours } hrs & ${ minutes } min & ${ seconds } secs & ${ milliseconds} millisecs
 
                                             You almost live more than ${n_M.toFixed(1)} million Seconds
-                                            
+
                                            You are from Generation ${gen}` ;
 }                                          
-
 setInterval(calculateAge,1000);
