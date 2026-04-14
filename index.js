@@ -20,10 +20,11 @@
 
 
 
-    if(monthDiff<0 || (monthDiff===0 && today.getDate()<dob.getDate())) {
+    if(monthDiff<0) {
         age--;
-        monthDiff+=12;
+        monthDiff+=12
     }
+   
 
    // time based diffs
 

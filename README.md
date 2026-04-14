@@ -7,3 +7,7 @@ This is my first learning of HTML ,CSS and Javascript , with some help of many y
 
 <br> Not the same project , but a slight different and more ,
 <br> i calculated age in seconds by just using class 3 maths.... that we learnt there ... (:-)...
+
+ <br>Today i enhanced my age calculator by added time it and calculate in real time by using set interval...
+
+ 
