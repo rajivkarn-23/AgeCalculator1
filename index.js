@@ -82,7 +82,7 @@ let closest = motivationData.reduce((prev, curr) =>
 );
 
 let message = `\n\n💡 At the age ${closest.age}, ${closest.name} was prooving the world wrong......
-                                Get up Bruhh and Be better (Day by Day).. 🚀`;
+                                Get up Bruhh Don't waste your Potential...🚀`;
   
 
 document.getElementById("p1").innerHTML = `Your age is: ${age} yrs, ${monthDiff} months, ${days} days <br>
